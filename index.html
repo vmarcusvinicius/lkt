@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectando ao Projeto X...</title>
+    <meta http-equiv="refresh" content="0; url=fivem://connect/x.rvngroup.com.br">
+    
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .loader {
+            border: 4px solid #333;
+            border-top: 4px solid #2ecc71;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        a { color: #2ecc71; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="loader" style="margin: 0 auto 20px;"></div>
+        <h1>Conectando ao Servidor...</h1>
+        <p>Se o seu FiveM não abrir sozinho, <a href="fivem://connect/x.rvngroup.com.br">clique aqui para forçar</a>.</p>
+    </div>
+
+    <script>
+        // Redirecionamento via JavaScript como backup
+        window.location.href = "fivem://connect/x.rvngroup.com.br";
+        
+        // Fecha a aba após 5 segundos para não ficar aberta no navegador do usuário
+        setTimeout(() => { window.close(); }, 5000);
+    </script>
+</body>
+</html>
